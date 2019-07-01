@@ -213,4 +213,5 @@ $app->post("/admin/categories/:idcategory", function($idcategory){
 
 $app->run();
 
+
  ?>
