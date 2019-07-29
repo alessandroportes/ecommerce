@@ -6,7 +6,6 @@ use \Hcode\Model\Category;
 use \Hcode\Model\Cart;
 use \Hcode\Model\Address;
 use \Hcode\Model\User;
-use Rain\Tpl\Exception;
 
 $app->get('/', function() {
 
