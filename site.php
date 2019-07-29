@@ -173,12 +173,12 @@ $app->post("/register", function(){
 
 	$user = new User();
 	$user->setData([
-		'indamin'=>0,
-		'deslogin'=>$_POST['email'],
 		'desperson'=>$_POST['name'],
-		'desemail'=>$_POST['email'],
+		'deslogin'=>$_POST['email'],
 		'despassword'=>$_POST['password'],
-		'nrphone'=>$_POST['phone']
+		'desemail'=>$_POST['email'],		
+		'nrphone'=>$_POST['phone'],
+		'inadmin'=>0
 	]);
 	$user->save();
 	User::login($_POST['email'], $_POST['password']);
